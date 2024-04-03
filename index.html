@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Todo App</title>
+         <link rel="stylesheet" href="style.css">
+</head>
+<body>
+         <div >
+          <h1>Daily  work schedule sheet</h1>
+          <input  type="text1-0" name="" id="inputfield">
+          <button class="btn" >Enter</button>
+          <div  class="todolist"> 
+                   <!-- <p id="todofirst"></p> -->
+          </div>
+         </div>
+         <script>
+                  let inputelem =  document.getElementById("inputfield")
+                  // console.log(inputelem)
+                  let clickbtn = document.querySelector(".btn")
+                  let todo = document.querySelector(".todolist")
+                  // let todofirst = document.getElementById("todofirst")
+                  const addtodo  = ( ) => {
+                           // console.log(inputelem.value) 
+                           // todofirst.textContent = inputelem.value
+                                    let pelem = document.createElement("p")
+                                    pelem.textContent = inputelem.value
+                                    console.log(pelem)
+                                    todo.append(pelem)
+                                    inputelem.value = ""
+
+                  }
+                  clickbtn.addEventListener("click" , () =>{
+                           addtodo();
+                  });
+                  todo.addEventListener('click' , (event) => {
+                          console.log(event.target) 
+                          let currentelem = event.target
+                          currentelem.remove()
+                  })
+           </script>
+
+</body>
+</html>

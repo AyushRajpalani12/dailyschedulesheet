@@ -1,0 +1,26 @@
+body{
+         background-color: black;
+         text-align: center;
+
+}
+h1{
+         color: azure;
+         text-align: center;
+}
+input{
+         background-color: aqua;
+         height: 25px;
+         width: 180px;
+}
+button{
+         border: 2px;
+         color: brown;
+         width: 60px;
+         height: 30px;
+         font-size: large;
+        
+}
+ .todolist{ 
+         font-size:xx-large;
+         color: white;
+ } 
